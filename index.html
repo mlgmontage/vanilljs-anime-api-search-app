@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootswatch/dist/journal/bootstrap.min.css"
+    />
+    <title>Album example · Bootstrap</title>
+  </head>
+  <body>
+    <header>
+      <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+          <!-- additional content -->
+        </div>
+      </div>
+
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container d-flex justify-content-between">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <img
+              src="./assets/logo.svg"
+              width="40"
+              height="40"
+              class="mr-2"
+              alt=""
+            />
+            <strong>Anime</strong>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarHeader"
+            aria-controls="navbarHeader"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main role="main">
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1>Search Anime & Mange</h1>
+
+          <form action="">
+            <div class="form-group">
+              <label for="term">Anime title</label>
+              <input
+                class="form-control"
+                placeholder="Search..."
+                id="term"
+                name="term"
+                type="text"
+              />
+
+              <br />
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="type"
+                  checked
+                  id="anime"
+                  value="anime"
+                />
+                <label class="form-check-label" for="anime">Anime</label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="type"
+                  id="manga"
+                  value="manga"
+                />
+                <label class="form-check-label" for="manga">Manga</label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="type"
+                  id="person"
+                  value="person"
+                />
+                <label class="form-check-label" for="person">Person</label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="type"
+                  id="character"
+                  value="character"
+                />
+                <label class="form-check-label" for="character"
+                  >Character</label
+                >
+              </div>
+
+              <br />
+              <button type="reset" class="btn btn-secondary mt-3">reset</button>
+              <button type="submit" class="btn btn-primary mt-3">search</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <div class="album py-5 bg-light">
+        <div class="container">
+          <div class="row">
+            <!-- row start -->
+
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <div class="mb-2">
+                  <img
+                    src="https://cdn.myanimelist.net/images/manga/1/2492.jpg?s=4bca3b4c1e7b0bd92f57713d433de04c"
+                    style="width: 100%;"
+                    alt=""
+                    class="card-img"
+                  />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title"><a href="#">Header</a></h5>
+                  <p class="card-text">
+                    description
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  ></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- row end -->
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <script src="./main.js"></script>
+</html>
